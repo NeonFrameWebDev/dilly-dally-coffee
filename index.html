@@ -6,19 +6,16 @@
 <meta name="theme-color" content="#144C2F">
 <title>Dilly Dally Coffee Co, Bend Oregon, named after a ski run</title>
 <meta name="description" content="Dilly Dally Coffee Co in Bend, OR. Named after an unofficial tree run at Mt. Bachelor. Thump coffee, matcha, Cars and Coffee 1st and 3rd Sundays. 1001 SW Emkay Dr.">
-<meta name="keywords" content="Dilly Dally Coffee, Bend Oregon coffee, Thump coffee, Cars and Coffee Bend, Mt Bachelor, 1001 SW Emkay, Southern Crossing, Bend coffee shop">
+<meta name="keywords" content="Dilly Dally Coffee, Bend Oregon coffee, Thump coffee, Cars and Coffee Bend, Mt Bachelor, 1001 SW Emkay">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="Dilly Dally Coffee Co">
 <meta name="geo.region" content="US-OR">
 <meta name="geo.placename" content="Bend, Oregon">
 <meta name="geo.position" content="44.042;-121.3153">
 <link rel="canonical" href="https://neonframewebdev.github.io/dilly-dally-coffee/">
 <meta property="og:type" content="restaurant">
-<meta property="og:locale" content="en_US">
 <meta property="og:title" content="Dilly Dally Coffee Co, Bend Oregon">
 <meta property="og:description" content="The mountains are better with coffee. Bend, OR. Cars and Coffee 1st and 3rd Sundays.">
 <meta property="og:image" content="https://neonframewebdev.github.io/dilly-dally-coffee/images/hero-baristas.jpg">
-<meta property="og:image:alt" content="Two baristas at the Dilly Dally Coffee Co counter with the shop wall sign">
 <meta property="og:url" content="https://neonframewebdev.github.io/dilly-dally-coffee/">
 <meta property="og:site_name" content="Dilly Dally Coffee Co">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +26,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preload" as="image" href="images/hero-baristas.jpg" imagesrcset="images/hero-baristas-800.jpg 800w, images/hero-baristas.jpg 1365w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="images/hero-baristas.jpg" imagesrcset="images/hero-baristas-800.jpg 800w, images/hero-baristas.jpg 1365w" imagesizes="(max-width: 900px) 100vw, 46vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap" media="print" onload="this.media='all'">
@@ -46,20 +43,13 @@
       "image": "https://neonframewebdev.github.io/dilly-dally-coffee/images/hero-baristas.jpg",
       "description": "Coffee shop in Bend, OR named after the Dilly Dally Alley tree run at Mt. Bachelor. Serves Thump coffee. Hosts Cars and Coffee 1st and 3rd Sundays.",
       "url": "https://neonframewebdev.github.io/dilly-dally-coffee/",
-      "servesCuisine": ["Coffee", "Tea", "Pastry"],
+      "servesCuisine": ["Coffee","Tea","Pastry"],
       "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1001 SW Emkay Drive",
-        "addressLocality": "Bend",
-        "addressRegion": "OR",
-        "postalCode": "97702",
-        "addressCountry": "US"
-      },
-      "geo": {"@type": "GeoCoordinates", "latitude": 44.042, "longitude": -121.3153},
+      "address": {"@type":"PostalAddress","streetAddress":"1001 SW Emkay Drive","addressLocality":"Bend","addressRegion":"OR","postalCode":"97702","addressCountry":"US"},
+      "geo": {"@type":"GeoCoordinates","latitude":44.042,"longitude":-121.3153},
       "openingHoursSpecification": [
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00"},
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "10:00"}
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"08:00","closes":"10:00"}
       ],
       "foundingDate": "2023-05",
       "sameAs": [
@@ -73,19 +63,13 @@
       "name": "Bend Cars and Coffee at Dilly Dally",
       "startDate": "2026-05-03T08:00:00-07:00",
       "endDate": "2026-05-03T10:00:00-07:00",
-      "eventSchedule": {
-        "@type": "Schedule",
-        "repeatFrequency": "P2W",
-        "byDay": ["https://schema.org/Sunday"],
-        "startTime": "08:00",
-        "endTime": "10:00"
-      },
+      "eventSchedule": {"@type":"Schedule","repeatFrequency":"P2W","byDay":["https://schema.org/Sunday"],"startTime":"08:00","endTime":"10:00"},
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {"@id": "https://neonframewebdev.github.io/dilly-dally-coffee/#shop"},
+      "location": {"@id":"https://neonframewebdev.github.io/dilly-dally-coffee/#shop"},
       "image": "https://neonframewebdev.github.io/dilly-dally-coffee/images/cars-meet.jpg",
-      "description": "Casual Bend car meetup. Modern imports, performance builds, vintage classics, exotics, rally. Free, open to all. 100+ vehicles typical.",
-      "organizer": {"@type": "Person", "name": "Aaron Hofferber"}
+      "description": "Casual Bend car meetup. Modern imports, performance builds, vintage classics, rally. 100+ vehicles typical.",
+      "organizer": {"@type":"Person","name":"Aaron Hofferber"}
     }
   ]
 }
@@ -93,221 +77,193 @@
 </head>
 <body class="is-home">
 
-<div class="loader" id="loader">
-  <div class="loader__inner">
-    <svg class="loader__ridge" viewBox="0 0 140 40" fill="none" aria-hidden="true">
-      <path d="M0 38 L20 22 L34 28 L52 10 L70 24 L84 18 L102 30 L120 8 L140 38 L140 40 L0 40 Z" fill="currentColor"/>
-    </svg>
-    <div class="loader__mark">Dilly Dally</div>
-    <div class="loader__bar"></div>
-    <div class="loader__count">Est. 2023 &middot; Elev. 3623</div>
-  </div>
-</div>
-
-<div class="progress" id="progress"></div>
-
 <nav class="nav" id="nav" aria-label="Primary">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__mark" aria-label="Dilly Dally Coffee Co home">
-      <span class="nav__mark__logo" aria-hidden="true">
-        <svg viewBox="0 0 32 32" fill="none">
-          <path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/>
-          <path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/>
-          <path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-          <path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-          <path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-          <path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-        </svg>
-      </span>
-      Dilly Dally
-    </a>
-    <ul class="nav__links" role="list">
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
-      <li><a href="#visit">Visit</a></li>
-    </ul>
-    <a href="#visit" class="nav__cta">Stop by</a>
-    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
-      Menu
-    </button>
-  </div>
-</nav>
-
-<aside class="menu" id="menu" inert aria-label="Site menu">
-  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
-  <ul class="menu__links" role="list">
-    <li><a href="index.html" class="is-active">Home</a></li>
+  <a href="index.html" class="nav__mark" aria-label="Dilly Dally Coffee Co home">
+    <span class="nav__mark__dot" aria-hidden="true">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+    </span>
+    Dilly Dally
+  </a>
+  <ul class="nav__links" role="list">
     <li><a href="menu.html">Menu</a></li>
     <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
     <li><a href="#visit">Visit</a></li>
   </ul>
-  <div>
-    <p class="menu__meta"><strong>Shop</strong>1001 SW Emkay Dr<br>Bend, OR 97702</p>
-    <p class="menu__meta"><strong>Hours</strong>Mon to Fri, 7 am to 6 pm<br>Sun, 8 am to 10 am (Cars &amp; Coffee)</p>
-    <p class="menu__meta"><strong>Social</strong><a href="https://www.instagram.com/dillydallycoffeeco/" target="_blank" rel="noopener">Instagram &rarr;</a></p>
-  </div>
+  <a href="#visit" class="nav__cta">Stop by</a>
+  <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu-overlay">
+    <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+    Menu
+  </button>
+</nav>
+
+<aside class="menu-overlay" id="menu-overlay" inert aria-label="Site menu">
+  <button class="menu-overlay__close" id="menuClose" aria-label="Close menu">Close</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul>
+  <p class="menu-overlay__foot">1001 SW Emkay Dr &middot; Bend, OR 97702<br>Mon to Fri, 7 am to 6 pm</p>
 </aside>
 
 <main id="main">
 
-<header class="hero" data-nav-dark>
-  <div class="hero__bg" aria-hidden="true">
-    <img src="images/hero-baristas.jpg"
-         srcset="images/hero-baristas-800.jpg 800w, images/hero-baristas.jpg 1365w"
-         sizes="100vw"
-         alt=""
-         width="1365" height="1706"
-         fetchpriority="high" decoding="async">
-  </div>
-  <div class="hero__scrim" aria-hidden="true"></div>
+<section class="hero">
   <div class="hero__inner">
-    <p class="hero__meta">
-      <span>Est. 2023</span>
-      <span>Bend, Oregon</span>
-      <span>Elev. 3623</span>
-      <span>1001 SW Emkay</span>
-    </p>
-    <h1 class="hero__title">The <em>mountains</em> are better with coffee.</h1>
-    <p class="hero__sub">Dilly Dally Coffee Co. is a small shop in Bend named after an unofficial tree run at Mt. Bachelor. We pour Thump coffee, pull clean espresso, and host Cars &amp; Coffee every first and third Sunday in our lot.</p>
-    <div class="hero__actions">
-      <a href="menu.html" class="btn btn--primary">See the menu <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
-      <a href="cars-and-coffee.html" class="btn btn--ghost">Cars &amp; Coffee <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    <div class="hero__left">
+      <p class="hero__eyebrow">Since 2023 &middot; Bend, OR &middot; Elev. 3623</p>
+      <h1 class="hero__title">The mountains are better with <span class="stamp">coffee.</span></h1>
+      <p class="hero__sub">A small shop in Bend, named after an unofficial tree run at Mt. Bachelor. We pour Thump, pull clean espresso, and host Cars &amp; Coffee every first and third Sunday in our lot.</p>
+      <div class="hero__actions">
+        <a href="menu.html" class="btn btn--pine">See the menu</a>
+        <a href="cars-and-coffee.html" class="btn btn--outline">Cars &amp; Coffee</a>
+      </div>
+      <div class="hero__facts">
+        <div><h3>Shop</h3><p>1001 SW Emkay<br>Bend, Oregon</p></div>
+        <div><h3>Hours</h3><p>Mon to Fri<br>7 am to 6 pm</p></div>
+        <div><h3>Pours</h3><p>Thump Coffee<br>Local, Bend</p></div>
+      </div>
+    </div>
+    <div class="hero__right">
+      <div class="collage" aria-hidden="false">
+        <figure class="polaroid polaroid--a">
+          <span class="tape"></span>
+          <img src="images/hero-baristas.jpg" srcset="images/hero-baristas-800.jpg 800w, images/hero-baristas.jpg 1365w" sizes="(max-width: 900px) 54vw, 25vw" alt="Two baristas at the Dilly Dally counter with the big green wall sign" width="1365" height="1706" fetchpriority="high" decoding="async">
+          <figcaption class="polaroid__caption">the crew</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--b">
+          <span class="tape tape--b"></span>
+          <img src="images/matcha-hand.jpg" srcset="images/matcha-hand-800.jpg 800w, images/matcha-hand.jpg 1440w" sizes="(max-width: 900px) 46vw, 22vw" alt="Barista in an olive apron handing off a matcha latte with rosetta art" width="1440" height="1800" loading="lazy" decoding="async">
+          <figcaption class="polaroid__caption">the matcha</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--c">
+          <span class="tape tape--c"></span>
+          <img src="images/cars-meet.jpg" srcset="images/cars-meet-800.jpg 800w, images/cars-meet.jpg 2000w" sizes="(max-width: 900px) 44vw, 20vw" alt="Cars and Coffee meet at the Dilly Dally lot" width="2000" height="2000" loading="lazy" decoding="async">
+          <figcaption class="polaroid__caption">sunday, 8 am</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
-  <div class="hero__scroll" aria-hidden="true">Scroll</div>
-</header>
+</section>
 
-<section class="story" id="story">
-  <div class="wrap story__grid">
-    <div class="story__lede">
-      <p class="eyebrow eyebrow--sand" style="margin-bottom: 20px;">The story</p>
-      <p>Named after the <em>first run</em> Jack ever skied down Mt. Bachelor.</p>
+<div class="topo" aria-hidden="true">
+  <svg viewBox="0 0 1600 64" preserveAspectRatio="none"><path d="M0 32 Q 100 20, 200 32 T 400 32 T 600 32 T 800 32 T 1000 32 T 1200 32 T 1400 32 T 1600 32" stroke="currentColor" stroke-width="1" fill="none"/><path d="M0 46 Q 100 34, 200 46 T 400 46 T 600 46 T 800 46 T 1000 46 T 1200 46 T 1400 46 T 1600 46" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/><path d="M0 18 Q 100 6, 200 18 T 400 18 T 600 18 T 800 18 T 1000 18 T 1200 18 T 1400 18 T 1600 18" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/></svg>
+</div>
+
+<section class="story">
+  <div class="story__grid">
+    <div class="story__label">
+      <span class="hand hand--xl">why</span>
+      <p>the story, shortish</p>
     </div>
-    <div class="story__body reveal">
-      <p>Dilly Dally Alley is an unofficial tree run off the Sunrise chair, threaded between Marshmallow and Rooster Tail. Banking turns, little jumps, more fun than it has any business being. A Bend classic.</p>
-      <p>In May 2023, Jack opened a shop a few miles downhill and named it after the run. The logo is the coffee cup you already knew. The wall sign says the mountains are better with coffee, and it is not wrong.</p>
+    <div class="story__body">
+      <p class="dropcap">Dilly Dally Alley is an unofficial tree run off the Sunrise chair at Mt. Bachelor, threaded between Marshmallow and Rooster Tail. Banking turns, little jumps, more fun than it has any business being. A Bend classic.</p>
+      <p>In May 2023, Jack opened a shop a few miles downhill and named it after the run. The logo is the coffee cup you already knew. The sign on the wall says the mountains are better with coffee, and it is not wrong.</p>
       <p>We pour Thump, brew pour overs in the morning, pull clean espresso all day, and steam a matcha latte that people drive across town for. Roasting our own is next.</p>
-      <p class="story__sig">Jack &middot; Owner, since 2023</p>
+      <p class="story__sig">Jack &middot; Owner &middot; Since 2023</p>
     </div>
   </div>
 </section>
 
-<section class="menu-teaser" data-nav-dark>
-  <div class="wrap">
-    <div class="menu-teaser__head reveal">
-      <div>
-        <p class="eyebrow eyebrow--cream" style="color: var(--sand);">Short list</p>
-        <h2 class="display-2">What we are pouring.</h2>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>The mountains are better with coffee <i class="marquee__dot"></i> Est. 2023 <i class="marquee__dot"></i> 1001 SW Emkay <i class="marquee__dot"></i> Cars &amp; Coffee every other Sunday <i class="marquee__dot"></i> </span>
+    <span>The mountains are better with coffee <i class="marquee__dot"></i> Est. 2023 <i class="marquee__dot"></i> 1001 SW Emkay <i class="marquee__dot"></i> Cars &amp; Coffee every other Sunday <i class="marquee__dot"></i> </span>
+  </div>
+</div>
+
+<section class="chalk">
+  <div class="chalk__wrap">
+    <div class="chalk__head">
+      <h2>What we are <em>pouring.</em></h2>
+      <p>Short list &middot; see menu for everything</p>
+    </div>
+    <div class="chalk__cols">
+      <div class="chalk__col">
+        <h3>Coffee</h3>
+        <ul class="chalk__list">
+          <li class="chalk__item"><div><strong>Cortado</strong><small>Double shot, equal parts steamed milk. Gibraltar glass.</small></div><span>4.75</span></li>
+          <li class="chalk__item"><div><strong>Latte</strong><small>Oat, whole, or almond. Syrup optional.</small></div><span>5.25</span></li>
+          <li class="chalk__item"><div><strong>Pour over</strong><small>Thump single origin. Ask about this week.</small></div><span>5.50</span></li>
+          <li class="chalk__item"><div><strong>Cold brew</strong><small>Eighteen hour steep, on tap.</small></div><span>5.00</span></li>
+        </ul>
       </div>
-      <p>The counter menu runs deep. Here are the six drinks people come back for. For the whole list, breakfast sandos, and retail beans, head to the menu.</p>
+      <div class="chalk__col">
+        <h3>Not coffee</h3>
+        <ul class="chalk__list">
+          <li class="chalk__item"><div><strong>Matcha latte</strong><small>Ceremonial grade, whisked by hand. Hot or iced.</small></div><span>6.25</span></li>
+          <li class="chalk__item"><div><strong>Chai latte</strong><small>Dirty with a shot, plus 1.25.</small></div><span>5.50</span></li>
+          <li class="chalk__item"><div><strong>Breakfast sando</strong><small>Egg, aged cheddar, house biscuit.</small></div><span>8.50</span></li>
+          <li class="chalk__item"><div><strong>Marigold Green tea</strong><small>Loose leaf, bright and floral.</small></div><span>4.25</span></li>
+        </ul>
+      </div>
     </div>
-    <div class="menu-teaser__grid">
-      <article class="menu-teaser__item reveal">
-        <span class="eyebrow">01 / Matcha</span>
-        <h3>Iced matcha latte</h3>
-        <p>Ceremonial grade, whisked by hand, with oat or whole milk. Our most ordered drink.</p>
-      </article>
-      <article class="menu-teaser__item reveal">
-        <span class="eyebrow">02 / Espresso</span>
-        <h3>Cortado</h3>
-        <p>Double shot, equal parts steamed milk, served in a gibraltar.</p>
-      </article>
-      <article class="menu-teaser__item reveal">
-        <span class="eyebrow">03 / Brew</span>
-        <h3>Drip &amp; pour over</h3>
-        <p>Thump beans, rotating single origin, ground the minute you ordered it.</p>
-      </article>
-      <article class="menu-teaser__item reveal">
-        <span class="eyebrow">04 / Chill</span>
-        <h3>Cold brew</h3>
-        <p>Slow steeped for eighteen hours. On tap.</p>
-      </article>
-      <article class="menu-teaser__item reveal">
-        <span class="eyebrow">05 / Tea</span>
-        <h3>Marigold green</h3>
-        <p>One of five loose leaf teas. Bright, floral, underrated.</p>
-      </article>
-      <article class="menu-teaser__item reveal">
-        <span class="eyebrow">06 / Food</span>
-        <h3>Breakfast sandos</h3>
-        <p>Egg, cheese, house biscuit. With a pastry or a burrito on the side if you are doing the day right.</p>
-      </article>
-    </div>
-    <div class="menu-teaser__cta">
-      <a href="menu.html" class="btn btn--primary">See the full menu <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    <div class="chalk__cta">
+      <a href="menu.html" class="btn btn--sand">See the whole board &rarr;</a>
     </div>
   </div>
 </section>
 
-<section class="cars" id="cars">
-  <div class="wrap cars__grid">
-    <div class="cars__img reveal">
-      <img src="images/cars-meet.jpg"
-           srcset="images/cars-meet-800.jpg 800w, images/cars-meet.jpg 2000w"
-           sizes="(max-width: 900px) 100vw, 60vw"
-           alt="Cars & Coffee meet at the Dilly Dally lot, classic and modern cars lined up"
-           width="2000" height="2000"
-           loading="lazy" decoding="async">
+<section class="cars">
+  <div class="cars__wrap">
+    <div class="cars__top">
+      <h2 class="display-2">Cars, <span class="hand hand--md" style="display: inline-block; transform: rotate(-2deg);">coffee</span>, two hours, twice a month.</h2>
+      <p>Every other Sunday morning the lot fills with a hundred cars. Vintage to modern, rally to exotic, wagons to hot hatches. Coffee is hot by 7:45. We start pulling at 8.</p>
     </div>
-    <div class="cars__body">
-      <p class="eyebrow" style="color: var(--sand-deep);">Cars &amp; Coffee</p>
-      <h2 class="display-2">First and third Sundays. Our lot. Bring the ride.</h2>
-      <p>Every other Sunday morning the lot fills up with a hundred cars. Vintage to modern, rally to exotic, wagons to hot hatches. Coffee is hot by seven-forty-five. We start pulling at eight.</p>
-      <dl class="cars__sheet">
-        <dt>When</dt><dd>1st &amp; 3rd Sundays, 8 to 10 am</dd>
-        <dt>Where</dt><dd>1001 SW Emkay Dr, Bend</dd>
-        <dt>Who</dt><dd>Any make, any model. Free to attend.</dd>
-        <dt>Host</dt><dd>Aaron Hofferber, Avants</dd>
-      </dl>
-      <a href="cars-and-coffee.html" class="btn btn--outline">Next dates &amp; the rules <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    <div class="cars__collage">
+      <div class="cars__photo cars__photo--big">
+        <img src="images/cars-meet.jpg" srcset="images/cars-meet-800.jpg 800w, images/cars-meet.jpg 2000w" sizes="(max-width: 900px) 100vw, 60vw" alt="Classic and modern cars parked in the Dilly Dally lot on a sunny Sunday morning" width="2000" height="2000" loading="lazy" decoding="async">
+      </div>
+      <div class="cars__photo cars__photo--small">
+        <img src="images/counter-customer.jpg" srcset="images/counter-customer-800.jpg 800w, images/counter-customer.jpg 1215w" sizes="(max-width: 900px) 50vw, 20vw" alt="Customer sipping matcha in front of the wall sign" width="1215" height="2160" loading="lazy" decoding="async">
+      </div>
+      <div class="cars__photo cars__photo--small">
+        <img src="images/cortado-glass.jpg" srcset="images/cortado-glass-800.jpg 800w, images/cortado-glass.jpg 1080w" sizes="(max-width: 900px) 50vw, 20vw" alt="Cortado in a gibraltar glass on a white counter" width="1080" height="1919" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <div class="ticket">
+      <div class="ticket__block"><h3>When</h3><p>1st &amp; 3rd Sundays</p></div>
+      <span class="ticket__divider"></span>
+      <div class="ticket__block"><h3>Time</h3><p>8 to 10 am</p></div>
+      <span class="ticket__divider" style="display:none;"></span>
+      <div class="ticket__block"><h3>Price</h3><p>Free, every make</p></div>
+    </div>
+    <div class="cars__foot">
+      <p>Hosted by Aaron Hofferber &middot; Avants</p>
+      <a href="cars-and-coffee.html" class="btn btn--pine">Dates &amp; rules &rarr;</a>
     </div>
   </div>
 </section>
 
-<section class="roaster">
-  <div class="wrap roaster__grid">
-    <div class="roaster__img reveal">
-      <img src="images/matcha-hand.jpg"
-           srcset="images/matcha-hand-800.jpg 800w, images/matcha-hand.jpg 1440w"
-           sizes="(max-width: 900px) 100vw, 48vw"
-           alt="Barista in an olive apron handing over a matcha latte with rosetta art"
-           width="1440" height="1800"
-           loading="lazy" decoding="async">
+<section class="thump">
+  <div class="thump__wrap">
+    <div class="thump__photo">
+      <img src="images/matcha-hand.jpg" srcset="images/matcha-hand-800.jpg 800w, images/matcha-hand.jpg 1440w" sizes="(max-width: 900px) 100vw, 44vw" alt="Hands passing a matcha latte with perfect rosetta art" width="1440" height="1800" loading="lazy" decoding="async">
+      <figcaption class="polaroid__caption">thump, not stump</figcaption>
     </div>
-    <div class="roaster__body">
-      <span class="roaster__badge">Thump Coffee &middot; Bend</span>
+    <div class="thump__body">
+      <span class="thump__badge">Thump Coffee &middot; Bend</span>
       <h2 class="display-2">We pour Thump. We are learning to roast.</h2>
-      <p>The beans on the hopper come from Thump, one of the best roasters in town. We chose them because their lightest roasts taste like fruit, their espresso blend hits bitter chocolate, and they ship fresh enough that you can date the bag by the week.</p>
-      <p>We are working toward roasting our own. A small batch, one origin, opinionated, not trying to do everything. When it is ready, the bags will be on the back shelf. Until then, we are proud to pour what we pour.</p>
+      <p>The beans on the hopper come from Thump, one of the best roasters in town. We chose them because their light roasts taste like fruit, their espresso hits bitter chocolate, and they ship fresh enough that you can date the bag by the week.</p>
+      <p>We are working toward roasting our own. A small batch, one origin, opinionated, not trying to do everything. When it is ready, the bags will be on the back shelf.</p>
     </div>
   </div>
 </section>
 
-<section class="visit" id="visit" data-nav-dark>
-  <div class="wrap visit__grid">
-    <div class="visit__body reveal">
+<section class="visit" id="visit">
+  <div class="visit__wrap">
+    <div class="visit__body">
       <p class="eyebrow" style="color: var(--sand);">Visit</p>
-      <h2 class="display-2">Southern Crossing, Bend. Plenty of parking.</h2>
-      <p>We are on the west side of the Bend Parkway, one minute off Knott and Parkway. Business park out front, outdoor patio in back with rolling garage doors that open on warm mornings. Strong wifi, plenty of tables, laptop friendly.</p>
+      <h2 class="display-2">Southern Crossing, <br>Bend. Plenty of parking.</h2>
+      <p>West side of the Parkway, one minute off Knott. Business park out front, outdoor patio in back with rolling garage doors that open on warm mornings. Strong wifi, plenty of tables, laptop friendly.</p>
       <div class="visit__details">
-        <div>
-          <h3>Address</h3>
-          <p>1001 SW Emkay Dr<br>Bend, OR 97702</p>
-        </div>
-        <div>
-          <h3>Hours</h3>
-          <p>Mon to Fri<br>7 am to 6 pm</p>
-        </div>
-        <div>
-          <h3>Sundays</h3>
-          <p>Cars &amp; Coffee<br>8 am to 10 am</p>
-        </div>
-        <div>
-          <h3>Hello</h3>
-          <p><a href="https://www.instagram.com/dillydallycoffeeco/" target="_blank" rel="noopener">@dillydallycoffeeco</a></p>
-        </div>
+        <div><h3>Address</h3><p>1001 SW Emkay Dr<br>Bend, OR 97702</p></div>
+        <div><h3>Hours</h3><p>Mon to Fri<br>7 am to 6 pm</p></div>
+        <div><h3>Sundays</h3><p>Cars &amp; Coffee<br>8 am to 10 am</p></div>
+        <div><h3>Hello</h3><p><a href="https://www.instagram.com/dillydallycoffeeco/" target="_blank" rel="noopener">@dillydallycoffeeco</a></p></div>
       </div>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=1001+SW+Emkay+Dr+Bend+OR" target="_blank" rel="noopener" class="btn btn--ghost-light">Open in maps &rarr;</a>
     </div>
     <div class="visit__map">
       <iframe title="Map to 1001 SW Emkay Dr, Bend OR" src="https://www.openstreetmap.org/export/embed.html?bbox=-121.3196%2C44.0395%2C-121.3108%2C44.0449&amp;layer=mapnik&amp;marker=44.0422%2C-121.3153" loading="lazy"></iframe>
@@ -318,23 +274,17 @@
 </main>
 
 <footer class="footer">
-  <div class="wrap">
+  <div class="footer__wrap">
+    <p class="footer__big">see you at the shop.</p>
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="index.html" class="footer__mark">
-          <span class="nav__mark__logo" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none">
-              <path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/>
-              <path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/>
-              <path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-              <path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-              <path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-            </svg>
+        <a href="index.html" class="nav__mark" style="color: var(--cream); font-size: 22px;">
+          <span class="nav__mark__dot" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
           </span>
           Dilly Dally
         </a>
-        <p>The mountains are better with coffee. Est. 2023, Bend Oregon. Named for the tree run.</p>
+        <p style="margin-top: 14px;">The mountains are better with coffee. Est. 2023, Bend Oregon. Named for the tree run.</p>
       </div>
       <div>
         <h4>Shop</h4>
@@ -350,7 +300,6 @@
           <li><a href="menu.html">Menu</a></li>
           <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
           <li><a href="https://www.instagram.com/dillydallycoffeeco/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.facebook.com/p/Dilly-Dally-Coffee-Co-100088998812340/" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="https://www.tiktok.com/@dillydallycoffeeco" target="_blank" rel="noopener">TikTok</a></li>
         </ul>
       </div>

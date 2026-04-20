@@ -32,173 +32,129 @@
   "name": "Bend Cars and Coffee at Dilly Dally",
   "description": "Casual Bend car meetup at Dilly Dally Coffee Co. 100+ vehicles typical. Free, open to every make and model.",
   "image": "https://neonframewebdev.github.io/dilly-dally-coffee/images/cars-meet.jpg",
-  "location": {
-    "@type": "Place",
-    "name": "Dilly Dally Coffee Co",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1001 SW Emkay Drive",
-      "addressLocality": "Bend",
-      "addressRegion": "OR",
-      "postalCode": "97702",
-      "addressCountry": "US"
-    }
-  },
+  "location": {"@type":"Place","name":"Dilly Dally Coffee Co","address":{"@type":"PostalAddress","streetAddress":"1001 SW Emkay Drive","addressLocality":"Bend","addressRegion":"OR","postalCode":"97702","addressCountry":"US"}},
   "startDate": "2026-05-03T08:00:00-07:00",
   "endDate": "2026-05-03T10:00:00-07:00",
-  "eventSchedule": {
-    "@type": "Schedule",
-    "repeatFrequency": "P2W",
-    "byDay": ["https://schema.org/Sunday"],
-    "startTime": "08:00",
-    "endTime": "10:00"
-  },
+  "eventSchedule": {"@type":"Schedule","repeatFrequency":"P2W","byDay":["https://schema.org/Sunday"],"startTime":"08:00","endTime":"10:00"},
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "organizer": {"@type": "Person", "name": "Aaron Hofferber"},
+  "organizer": {"@type":"Person","name":"Aaron Hofferber"},
   "isAccessibleForFree": true
 }
 </script>
 </head>
 <body class="is-cars">
 
-<div class="loader" id="loader">
-  <div class="loader__inner">
-    <svg class="loader__ridge" viewBox="0 0 140 40" fill="none" aria-hidden="true"><path d="M0 38 L20 22 L34 28 L52 10 L70 24 L84 18 L102 30 L120 8 L140 38 L140 40 L0 40 Z" fill="currentColor"/></svg>
-    <div class="loader__mark">Cars &amp; Coffee</div>
-    <div class="loader__bar"></div>
-    <div class="loader__count">8 to 10 am</div>
-  </div>
-</div>
-
-<div class="progress" id="progress"></div>
-
 <nav class="nav" id="nav" aria-label="Primary">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__mark" aria-label="Dilly Dally Coffee Co home">
-      <span class="nav__mark__logo" aria-hidden="true">
-        <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
-      </span>
-      Dilly Dally
-    </a>
-    <ul class="nav__links" role="list">
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="cars-and-coffee.html" class="is-active">Cars &amp; Coffee</a></li>
-      <li><a href="index.html#visit">Visit</a></li>
-    </ul>
-    <a href="#dates" class="nav__cta">Next date</a>
-    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
-      Menu
-    </button>
-  </div>
-</nav>
-
-<aside class="menu" id="menu" inert aria-label="Site menu">
-  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
-  <ul class="menu__links" role="list">
-    <li><a href="index.html">Home</a></li>
+  <a href="index.html" class="nav__mark" aria-label="Dilly Dally Coffee Co home">
+    <span class="nav__mark__dot" aria-hidden="true">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+    </span>
+    Dilly Dally
+  </a>
+  <ul class="nav__links" role="list">
     <li><a href="menu.html">Menu</a></li>
     <li><a href="cars-and-coffee.html" class="is-active">Cars &amp; Coffee</a></li>
+    <li><a href="index.html#visit">Visit</a></li>
+  </ul>
+  <a href="#dates" class="nav__cta">Next date</a>
+  <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu-overlay">
+    <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+    Menu
+  </button>
+</nav>
+
+<aside class="menu-overlay" id="menu-overlay" inert aria-label="Site menu">
+  <button class="menu-overlay__close" id="menuClose" aria-label="Close menu">Close</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
     <li><a href="index.html#visit">Visit</a></li>
   </ul>
 </aside>
 
 <main id="main">
 
-<header class="cars-hero" data-nav-dark>
-  <div class="wrap">
-    <p class="eyebrow">1st &amp; 3rd Sundays &middot; Free &middot; Every make</p>
-    <h1 class="display-1">Cars &amp; <em>Coffee</em>.</h1>
-    <p class="lead">Eight in the morning. The Dilly Dally lot. A hundred cars, a hundred conversations, a good pour of Thump to start the day.</p>
+<header class="cc-hero">
+  <div class="cc-hero__wrap">
+    <p class="cc-hero__eyebrow">1st &amp; 3rd Sundays &middot; Free &middot; Every make</p>
+    <h1>Cars &amp; <em>Coffee.</em></h1>
+    <p class="cc-hero__sub">Eight in the morning. The Dilly Dally lot. A hundred cars, a hundred conversations, a good pour of Thump to start the day.</p>
   </div>
 </header>
 
-<section class="cars-feature" data-nav-dark>
-  <div class="cars-feature__img">
-    <img src="images/cars-meet.jpg"
-         srcset="images/cars-meet-800.jpg 800w, images/cars-meet.jpg 2000w"
-         sizes="100vw"
-         alt="Cars and Coffee at Dilly Dally, a parking lot full of classic and modern cars on a sunny morning"
-         width="2000" height="2000"
-         fetchpriority="high" decoding="async">
+<div class="cc-bigphoto">
+  <img src="images/cars-meet.jpg" srcset="images/cars-meet-800.jpg 800w, images/cars-meet.jpg 2000w" sizes="100vw" alt="Cars and Coffee at Dilly Dally, a parking lot full of classic and modern cars on a sunny morning" width="2000" height="2000" fetchpriority="high" decoding="async">
+</div>
+
+<section class="cc-info">
+  <div class="cc-info__wrap">
+    <p class="cc-info__lede">Show up, park up, pour up. Bend Cars &amp; Coffee runs the 1st and 3rd Sundays of every month from 8 to 10 am, rain or shine.</p>
+    <p>The lot opens at 7:45. It is free, there is no registration, and every make and model is welcome. We see classic rally cars parked next to new electric builds parked next to weekend wagons parked next to exotics. It is good.</p>
+    <p>Aaron Hofferber of Avants hosts, we pour the coffee, and the community brings the cars. No gatekeeping, no judging, no entry fee. Roll in, grab a drink, walk the lot.</p>
   </div>
 </section>
 
-<section class="cars-info">
-  <div class="wrap cars-info__grid">
-    <div class="reveal">
-      <p class="eyebrow" style="color: var(--sand-deep);">How it works</p>
-      <h2 class="display-2">Show up, park up, pour up.</h2>
-      <p>Bend Cars &amp; Coffee runs the 1st and 3rd Sundays of every month from 8 to 10 am, rain or shine. The lot opens at 7:45. It is free, there is no registration, and every make and model is welcome. We see classic rally cars parked next to new electric builds parked next to weekend wagons parked next to exotics. It is good.</p>
-      <p>Aaron Hofferber of Avants hosts, we pour the coffee, and the community brings the cars. No gatekeeping, no judging, no entry fee. Roll in, grab a drink, walk the lot.</p>
+<section class="cc-rules">
+  <div class="cc-rules__wrap">
+    <div class="cc-rules__head">
+      <span class="eyebrow">Keep it clean</span>
+      <h2 class="display-2">The ground rules.</h2>
     </div>
-    <div class="reveal">
-      <p class="eyebrow" style="color: var(--sand-deep);">The ground rules</p>
-      <h2 class="display-2">Keep it clean.</h2>
-      <ul class="cars-rules">
-        <li>Arrive by 7:45 if you want a prime spot. Lot fills fast.</li>
-        <li>Kill the motor when you park. Fire it up on the way out, not while people are chatting.</li>
-        <li>No burnouts, no donuts, no drifting in the lot. Emkay Dr is public road.</li>
-        <li>Pack it in, pack it out. There is a trash can by the door.</li>
-        <li>Be cool to the neighbors. The lot is shared with other businesses.</li>
-        <li>Say hi to Jack and the baristas. That is the whole point.</li>
-      </ul>
+    <div class="cc-rules__grid">
+      <div class="cc-rule"><h3>Arrive early.</h3><p>Lot opens at 7:45. Best spots go fast. No stress if you roll up at 9.</p></div>
+      <div class="cc-rule"><h3>Kill the motor.</h3><p>When you park, shut it off. Fire it up on the way out, not while people are chatting.</p></div>
+      <div class="cc-rule"><h3>No burnouts.</h3><p>No donuts, no drifting in the lot. Emkay Dr is a public road, we want to keep this going.</p></div>
+      <div class="cc-rule"><h3>Pack it out.</h3><p>Trash can by the door. Cups, wrappers, bring it with you when you leave.</p></div>
+      <div class="cc-rule"><h3>Be a good neighbor.</h3><p>Shared lot. Other businesses open Sunday. Respect the lines.</p></div>
+      <div class="cc-rule"><h3>Say hi.</h3><p>To Jack, to the baristas, to the guy with the teal Thunderbird. That is the whole point.</p></div>
     </div>
   </div>
 </section>
 
-<section class="cars-dates" id="dates" data-nav-dark>
-  <div class="wrap">
-    <h2 class="display-2">Next dates.</h2>
-    <div class="dates-grid">
-      <div class="date-card"><p class="month">May</p><p class="day">3</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">May</p><p class="day">17</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">Jun</p><p class="day">7</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">Jun</p><p class="day">21</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">Jul</p><p class="day">5</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">Jul</p><p class="day">19</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">Aug</p><p class="day">2</p><p class="time">Sun &middot; 8 to 10</p></div>
-      <div class="date-card"><p class="month">Aug</p><p class="day">16</p><p class="time">Sun &middot; 8 to 10</p></div>
+<section class="cc-dates" id="dates">
+  <div class="cc-dates__wrap">
+    <div class="cc-dates__head">
+      <span class="eyebrow">Mark the calendar</span>
+      <h2 class="display-2">Next dates.</h2>
     </div>
-    <p style="text-align: center; margin-top: 40px; color: rgba(250, 247, 242, 0.65); font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;">Winter weather calls, we will post on Instagram the night before</p>
+    <div class="cc-dates__grid">
+      <div class="cc-date"><p class="m">May</p><p class="day">3</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">May</p><p class="day">17</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">Jun</p><p class="day">7</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">Jun</p><p class="day">21</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">Jul</p><p class="day">5</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">Jul</p><p class="day">19</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">Aug</p><p class="day">2</p><p class="time">Sun &middot; 8 to 10</p></div>
+      <div class="cc-date"><p class="m">Aug</p><p class="day">16</p><p class="time">Sun &middot; 8 to 10</p></div>
+    </div>
+    <p style="text-align: center; margin-top: 40px; color: var(--ink-2); font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;">Winter weather calls, we post on Instagram the night before.</p>
   </div>
 </section>
 
-<section class="cars-info">
-  <div class="wrap cars-info__grid">
-    <div class="reveal">
-      <p class="eyebrow" style="color: var(--sand-deep);">Get on the list</p>
-      <h2 class="display-2">Want a heads up when the next meet is?</h2>
-      <p>Drop us a line. We will email the date, address, and a quick weather call the Friday before. No spam, no promos, just the meet.</p>
-      <a href="mailto:hello@dillydallycoffeeco.com?subject=Cars%20and%20Coffee%20list" class="btn btn--pine" style="margin-top: 16px;">Email to join <span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
-    </div>
-    <div class="reveal">
-      <p class="eyebrow" style="color: var(--sand-deep);">More in Bend</p>
-      <h2 class="display-2">Other meets we like.</h2>
-      <p>Bend has a real car scene. If you are just visiting, these are the other ones worth putting on your calendar.</p>
-      <ul class="cars-rules">
-        <li><a href="https://www.bendcc.com/" target="_blank" rel="noopener" style="color: var(--pine); text-decoration: underline;">Bend Car Culture</a> &middot; the community calendar</li>
-        <li><a href="https://www.avants.com/" target="_blank" rel="noopener" style="color: var(--pine); text-decoration: underline;">Avants</a> &middot; our host, plus a quarterly magazine</li>
-        <li>Vintage Underground Cowboy Run &middot; summer rally, usually same day as a meet</li>
-      </ul>
-    </div>
+<section class="cc-foot">
+  <div class="cc-dates__wrap">
+    <span class="hand hand--lg">bring the ride.</span>
+    <p class="lead">Want a heads up for the next meet? Drop us a line. We email the date and weather the Friday before. No spam, just the meet.</p>
+    <a href="mailto:hello@dillydallycoffeeco.com?subject=Cars%20and%20Coffee%20list" class="btn btn--pine" style="margin-top: 16px;">Email to join &rarr;</a>
   </div>
 </section>
 
 </main>
 
 <footer class="footer">
-  <div class="wrap">
+  <div class="footer__wrap">
+    <p class="footer__big">see you sunday.</p>
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="index.html" class="footer__mark">
-          <span class="nav__mark__logo" aria-hidden="true">
+        <a href="index.html" class="nav__mark" style="color: var(--cream); font-size: 22px;">
+          <span class="nav__mark__dot" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
           </span>
           Dilly Dally
         </a>
-        <p>The mountains are better with coffee. Est. 2023, Bend Oregon.</p>
+        <p style="margin-top: 14px;">The mountains are better with coffee. Est. 2023, Bend Oregon.</p>
       </div>
       <div>
         <h4>Shop</h4>
