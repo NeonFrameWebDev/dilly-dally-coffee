@@ -1,0 +1,13 @@
+{
+  "name": "Dilly Dally Coffee Co",
+  "short_name": "Dilly Dally",
+  "description": "Coffee shop in Bend, OR named after a Mt. Bachelor ski run. Thump coffee, matcha, Cars and Coffee.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#144C2F",
+  "theme_color": "#144C2F",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ]
+}

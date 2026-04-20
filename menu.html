@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#144C2F">
+<title>Menu, Dilly Dally Coffee Co, Bend Oregon</title>
+<meta name="description" content="Full menu at Dilly Dally Coffee Co in Bend. Espresso, pour overs, matcha, chai, loose leaf tea, cold brew, breakfast sandos, pastries, Thump retail beans.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://neonframewebdev.github.io/dilly-dally-coffee/menu.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menu, Dilly Dally Coffee Co">
+<meta property="og:description" content="Espresso, matcha, pour overs, breakfast sandos.">
+<meta property="og:image" content="https://neonframewebdev.github.io/dilly-dally-coffee/images/menu-board.jpg">
+<meta property="og:url" content="https://neonframewebdev.github.io/dilly-dally-coffee/menu.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://neonframewebdev.github.io/dilly-dally-coffee/images/menu-board.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-menu">
+
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <svg class="loader__ridge" viewBox="0 0 140 40" fill="none" aria-hidden="true"><path d="M0 38 L20 22 L34 28 L52 10 L70 24 L84 18 L102 30 L120 8 L140 38 L140 40 L0 40 Z" fill="currentColor"/></svg>
+    <div class="loader__mark">Menu</div>
+    <div class="loader__bar"></div>
+    <div class="loader__count">Pouring now</div>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__mark" aria-label="Dilly Dally Coffee Co home">
+      <span class="nav__mark__logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+      </span>
+      Dilly Dally
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="menu.html" class="is-active">Menu</a></li>
+      <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
+      <li><a href="index.html#visit">Visit</a></li>
+    </ul>
+    <a href="index.html#visit" class="nav__cta">Stop by</a>
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span class="nav__menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</nav>
+
+<aside class="menu" id="menu" inert aria-label="Site menu">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <ul class="menu__links" role="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html" class="is-active">Menu</a></li>
+    <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
+    <li><a href="index.html#visit">Visit</a></li>
+  </ul>
+</aside>
+
+<main id="main">
+
+<header class="menu-hero" data-nav-dark>
+  <div class="wrap">
+    <p class="eyebrow">The whole list</p>
+    <h1 class="display-1">Menu.</h1>
+    <p class="lead">Espresso pulled by hand, loose leaf tea, cold brew on tap, breakfast sandos until we run out. Prices are current. Rotating specials on the chalkboard.</p>
+  </div>
+</header>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 01</p>
+        <h2 class="display-3">Espresso</h2>
+      </div>
+      <p>Thump espresso, pulled clean. All sizes available over ice.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Espresso</h3><p class="menu-item__desc">Double shot.</p></div><span class="menu-item__price">3.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Macchiato</h3><p class="menu-item__desc">Double shot, a spoonful of foam.</p></div><span class="menu-item__price">4.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Cortado</h3><p class="menu-item__desc">Double shot, equal parts steamed milk. Gibraltar glass.</p></div><span class="menu-item__price">4.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Latte</h3><p class="menu-item__desc">Double shot, steamed milk, thin foam.</p></div><span class="menu-item__price">5.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Mocha</h3><p class="menu-item__desc">House chocolate, double shot, steamed milk.</p></div><span class="menu-item__price">5.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Americano</h3><p class="menu-item__desc">Double shot, hot water. Room for cream.</p></div><span class="menu-item__price">4.00</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 02</p>
+        <h2 class="display-3">Drip &amp; Brew</h2>
+      </div>
+      <p>Thump drip in the morning, pour overs all day. Add a shot to anything for a shot in the dark.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Drip coffee</h3><p class="menu-item__desc">Rotating Thump blend. Refill at the counter.</p></div><span class="menu-item__price">3.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Shot in the dark</h3><p class="menu-item__desc">Drip, plus a shot of espresso. Because Monday.</p></div><span class="menu-item__price">4.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Pour over</h3><p class="menu-item__desc">Ask about the origin on bar.</p></div><span class="menu-item__price">5.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Cold brew</h3><p class="menu-item__desc">Eighteen hour steep, on tap.</p></div><span class="menu-item__price">5.00</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Sparkling cold brew</h3><p class="menu-item__desc">Topped with soda, a touch of citrus.</p></div><span class="menu-item__price">5.75</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 03</p>
+        <h2 class="display-3">Matcha &amp; More</h2>
+      </div>
+      <p>Ceremonial grade matcha, whisked by hand. Chai we actually like. Hot chocolate that tastes like chocolate.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Matcha latte</h3><p class="menu-item__desc">Hot or iced. Oat, whole, or almond.</p></div><span class="menu-item__price">6.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Strawberry matcha</h3><p class="menu-item__desc">Seasonal, on the chalkboard when it is on.</p></div><span class="menu-item__price">6.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Chai latte</h3><p class="menu-item__desc">Dirty with a shot, plus 1.25.</p></div><span class="menu-item__price">5.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Hot chocolate</h3><p class="menu-item__desc">Ghirardelli, steamed milk, whip on request.</p></div><span class="menu-item__price">4.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Steamer</h3><p class="menu-item__desc">Steamed milk, house flavor. Kid favorite.</p></div><span class="menu-item__price">4.25</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 04</p>
+        <h2 class="display-3">Tea</h2>
+      </div>
+      <p>Loose leaf, steeped to order.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Earl Grey</h3><p class="menu-item__desc">Bergamot, bright citrus.</p></div><span class="menu-item__price">4.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Irish Breakfast</h3><p class="menu-item__desc">Full leaf black. Takes milk well.</p></div><span class="menu-item__price">4.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Darjeeling</h3><p class="menu-item__desc">Muscatel, light body.</p></div><span class="menu-item__price">4.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Marigold Green</h3><p class="menu-item__desc">Loose leaf green, bright floral finish.</p></div><span class="menu-item__price">4.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Hibiscus Orange</h3><p class="menu-item__desc">Caffeine free. Good iced in summer.</p></div><span class="menu-item__price">4.25</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 05</p>
+        <h2 class="display-3">Flavors &amp; Add Ons</h2>
+      </div>
+      <p>House syrups, made in small batches.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Vanilla</h3><p class="menu-item__desc">Bean, not extract.</p></div><span class="menu-item__price">0.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Caramel</h3><p class="menu-item__desc">Cooked down slow.</p></div><span class="menu-item__price">0.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Cardamom</h3><p class="menu-item__desc">House signature, pairs with chai or a latte.</p></div><span class="menu-item__price">0.75</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Extra shot</h3><p class="menu-item__desc">Thump espresso.</p></div><span class="menu-item__price">1.25</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Oat, almond, whole milk</h3><p class="menu-item__desc">No upcharge for oat. Keep it clean.</p></div><span class="menu-item__price">0.00</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 06</p>
+        <h2 class="display-3">Food</h2>
+      </div>
+      <p>Breakfast sandwiches, local pastries, the occasional burrito. We stop making sandos at 11.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Breakfast sando</h3><p class="menu-item__desc">Egg, aged cheddar, house biscuit. Add bacon or sausage 1.50.</p></div><span class="menu-item__price">8.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Breakfast burrito</h3><p class="menu-item__desc">Egg, potato, cheese, salsa. Hot sauce on the counter.</p></div><span class="menu-item__price">9.50</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Pastry case</h3><p class="menu-item__desc">Rotating local. Croissant, cookie, scone, muffin.</p></div><span class="menu-item__price">4 to 6</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Italian soda</h3><p class="menu-item__desc">Pick your syrup, over ice. Kid drink, but for adults.</p></div><span class="menu-item__price">4.75</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="menu-section">
+  <div class="wrap">
+    <div class="menu-section__head">
+      <div>
+        <p class="eyebrow">Section 07</p>
+        <h2 class="display-3">Retail</h2>
+      </div>
+      <p>Beans to take home. Thump, roasted local.</p>
+    </div>
+    <ul class="menu-list">
+      <li class="menu-item"><div><h3 class="menu-item__name">Thump house blend</h3><p class="menu-item__desc">12 oz, whole bean. Grind at the counter.</p></div><span class="menu-item__price">22</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Single origin, rotating</h3><p class="menu-item__desc">Ask what is fresh this week.</p></div><span class="menu-item__price">24</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">Dilly Dally mug</h3><p class="menu-item__desc">Ceramic, pine green, holds a double cortado.</p></div><span class="menu-item__price">18</span></li>
+      <li class="menu-item"><div><h3 class="menu-item__name">T-shirt</h3><p class="menu-item__desc">The logo, on cream.</p></div><span class="menu-item__price">28</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__mark">
+          <span class="nav__mark__logo" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M7 14h14c2 0 3 1 3 3s-1 3-3 3h-14v-6z" fill="currentColor"/><path d="M21 17c0 2-2 4-7 4s-7-2-7-4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 17c2 0 3 1 3 2s-1 2-3 2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 10 Q10 8 11 6 Q12 4 11 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M15 10 Q14 8 15 6 Q16 4 15 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/><path d="M19 10 Q18 8 19 6 Q20 4 19 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+          </span>
+          Dilly Dally
+        </a>
+        <p>The mountains are better with coffee. Est. 2023, Bend Oregon.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <p class="footer__address"><strong>1001 SW Emkay Dr</strong>Bend, OR 97702<br>Mon to Fri, 7 am to 6 pm</p>
+      </div>
+      <div>
+        <h4>Events</h4>
+        <p class="footer__address"><strong>Cars &amp; Coffee</strong>1st &amp; 3rd Sundays<br>8 am to 10 am</p>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars-and-coffee.html">Cars &amp; Coffee</a></li>
+          <li><a href="https://www.instagram.com/dillydallycoffeeco/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Dilly Dally Coffee Co</span>
+      <span>Site by NeonFrame Web Design</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
